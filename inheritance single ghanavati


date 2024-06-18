@@ -1,4 +1,3 @@
-an example for 
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -13,33 +12,6 @@ class Dog(Animal):
 
     def sound(self):
         print("The dog barks.")
-
-
  
 
-.......................................
-
-
-....................................... 
-class BankAccount:
-    def __init__(self, balance):
-        self.balance = balance
-
-    def deposit(self, amount):
-        self.balance += amount
-
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-        else:
-            print("Insufficient funds.")
-
-class SavingsAccount(BankAccount):
-    def __init__(self, balance, interest_rate):
-        super().__init__(balance)
-        self.interest_rate = interest_rate
-
-    def add_interest(self):
-        self.balance += self.balance * self.interest_rate
-
-........................................ 
+ 
