@@ -1,0 +1,88 @@
+an example for inheritance single  
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def sound(self):
+        print("The animal makes a sound.")
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+    def sound(self):
+        print("The dog barks.")
+
+my_dog = Dog("Fido", "Golden Retriever")
+my_dog.sound()  
+........................................
+class Vehicle:
+    def __init__(self, color):
+        self.color = color
+
+    def drive(self):
+        print("The vehicle is moving.")
+
+class Car(Vehicle):
+    def __init__(self, color, num_doors):
+        super().__init__(color)
+        self.num_doors = num_doors
+
+    def drive(self):
+        print("The car is moving.")
+.......................................... 
+class Shape:
+    def __init__(self, color):
+        self.color = color
+
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, color, radius):
+        super().__init__(color)
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+.......................................
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print("Hello, my name is " + self.name + ".")
+
+class Student(Person):
+    def __init__(self, name, age, major):
+        super().__init__(name, age)
+        self.major = major
+
+    def greet(self):
+        print("Hello, my name is " + self.name + " and I'm a " + self.major + " major.")
+
+....................................... 
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient funds.")
+
+class SavingsAccount(BankAccount):
+    def __init__(self, balance, interest_rate):
+        super().__init__(balance)
+        self.interest_rate = interest_rate
+
+    def add_interest(self):
+        self.balance += self.balance * self.interest_rate
+
+........................................ 
