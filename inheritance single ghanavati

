@@ -14,23 +14,7 @@ class Dog(Animal):
     def sound(self):
         print("The dog barks.")
 
-my_dog = Dog("Fido", "Golden Retriever")
-my_dog.sound()  
-........................................
-class Vehicle:
-    def __init__(self, color):
-        self.color = color
 
-    def drive(self):
-        print("The vehicle is moving.")
-
-class Car(Vehicle):
-    def __init__(self, color, num_doors):
-        super().__init__(color)
-        self.num_doors = num_doors
-
-    def drive(self):
-        print("The car is moving.")
 .......................................... 
 class Shape:
     def __init__(self, color):
