@@ -1,0 +1,12 @@
+#نحوه استفاده از متدها و متغیر های والد و فرزند را با مثال مشخص کنید.
+
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sound(self):
+        print("The animal makes a sound.")
+
+    def eat(self):
+        print("The animal is eating.")
